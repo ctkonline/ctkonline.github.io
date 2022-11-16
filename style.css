@@ -1,0 +1,134 @@
+html {
+    padding: 0;
+    background-image: linear-gradient(rgb(32, 32, 64), rgb(8, 8, 8));
+    background-size: auto;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    color: white; /* font color */
+    font-size: 25px;
+    font-family: "Audiowide", sans-serif;
+    text-align: center;
+
+}
+
+h1 {
+  margin: 0 auto;
+  width: 25%;
+  padding: 15px;
+}
+
+h2{
+  color: rgb(180, 180, 238);
+}
+
+h3 {
+  color: rgb(207, 207, 223);
+  margin: 0 auto;
+  width: 25%;
+  padding: 15px;
+}
+
+a {
+  display: block;
+  color: rgb(207, 207, 223);
+}
+
+.content {
+  width: 37.5%;
+  height: auto;
+}
+
+.link {
+  color: rgb(81, 158, 202);
+}
+
+.topleft {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  text-decoration: none;
+  color: white;
+}
+
+.header-grid {
+  display: grid;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;
+  padding: 10px;
+  grid-template-areas: 
+  ". . . . ."; 
+}
+
+.content-grid {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "."
+    "."
+    "."
+    ".";
+}
+
+.nowrap {
+  clear: both;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.grid-item-header {
+  background-color: rgb(38, 38, 83);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  letter-spacing: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  transition: letter-spacing 0.25s ease-out 100ms;
+  overflow-wrap: break-word;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item-header:hover {
+  letter-spacing: 12px
+}
+
+.grid-item-content {
+  background-color: rgb(38, 38, 83);
+  border: 5px solid rgba(0, 0, 0, .3);
+  padding: 15px;
+  font-size: 30px;
+  height: 100px;
+  text-align: center;
+}
+
+.grid-item-content-center {
+  overflow-wrap: break-word;
+  background-color: rgb(38, 38, 83);
+  border: 5px solid rgba(0, 0, 0, .3);
+  padding: 15px;
+  font-size: 30px;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer::before {
+  content: "contact me: connorkenny1337@gmail.com";
+  text-align: center;
+  background-color: rgb(60, 74, 155);;
+  border: 2px solid rgb(0, 0, 0);
+  position:fixed;
+  bottom:0;
+  left: 0;
+  width:20%;
+  padding: 5px;
+}
